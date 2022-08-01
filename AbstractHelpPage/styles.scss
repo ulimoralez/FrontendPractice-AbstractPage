@@ -1,0 +1,96 @@
+$project-blue: #4C5FD5;
+$project-violet: #dadbf1;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'GT America Standard', sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: 75%;
+  }
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+header{
+  width: 100%;
+  height: 11vh;
+  font-size: 2.5rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+
+  a{
+    color: white;
+  }
+
+  .header__logo-container{
+    height: 100%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+
+    img{
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+    }
+
+    .logo-container--abstract-logo{
+      display: flex;
+      height: 70%;
+      align-items: center;
+      p{
+        padding-right: 10px;
+        margin-left: 5px;
+        border-right: 2px solid white;
+      }
+    }
+
+    .logo-container--help-center{
+      margin-left: 15px;
+      font-weight: 300;
+    }
+  }
+
+  .header__login-container{
+    width: auto;
+    height: 100%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+
+    button{
+      border-radius: 7px;
+      color: white;
+      background-color: #191a1b;
+      padding: 10px 25px;
+      margin: 0 10px;
+      font-weight: 300;
+    }
+
+    .login-container__submit-request{
+      button{
+        border: 1px solid white;
+      }
+    }
+
+    .login-container__sign-in{
+      button{
+        border: 1px solid $project-blue;
+        background-color: $project-blue;
+      }
+    }
+
+  }
+}
